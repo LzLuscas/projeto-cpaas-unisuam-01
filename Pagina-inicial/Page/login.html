@@ -52,6 +52,7 @@
   <script src="./Page/assets/js/jquerystorage.js" defer></script>
 
   <script src="./Page/assets/js/main.js" defer></script>
+  <script src="./Page/assets/js/validate.js" defer></script>
 </head>
 
 
@@ -87,7 +88,7 @@
   </header>
 
   <main id="container">
-    <form id="login_form">
+    <form id="login_form" action="javascript:alert('Formulario aprovado com sucesso!')" method="post" id="formcard">
       <div id="form_header">
         <h1>Cadastro</h1>
         <i id="mode_icon"></i>
@@ -105,11 +106,61 @@
       </div>
       <div id="inputs">
         <div class="input-box">
-          <label for="name">
+          <label for="uid">
             Nome completo
             <div class="input-field">
               <i class="fa-solid fa-user"></i>
-              <input type="text" id="name" name="name">
+              <input type="text" id="uid" name="uid" required>
+            </div>
+          </label>
+        </div>
+
+        <div class="input-box">
+          <label for="gen">
+            Gênero
+            <div class="input-field">
+              <i class="fa-solid fa-user"></i>
+              <input type="text" id="gen" name="gen">
+            </div>
+          </label>
+        </div>
+
+        <div class="input-box">
+          <label for="nasc">
+            Data de nascimento
+            <div class="input-field">
+              <i class="fa-solid fa-user"></i>
+              <input type="date" id="nasc" name="nasc" required>
+            </div>
+          </label>
+        </div>
+
+        <label for="idade">
+          Idade 
+          <div class="input-field">
+           <i class="fa-solid fa-user"></i>
+           <input type="text" name="idade" id="idade" disabled>
+
+          </div>
+
+       </label>
+
+        <div class="input-box">
+          <label for="cel">
+            Celular
+            <div class="input-field">
+              <i class="fa-solid fa-user"></i>
+              <input type="text" id="cel" name="cel" minlength="10" maxlength="10" >
+            </div>
+          </label>
+        </div>
+
+        <div class="input-box">
+          <label for="cpf">
+            CPF
+            <div class="input-field">
+              <i class="fa-solid fa-user"></i>
+              <input type="text" id="cpf" name="cpf" ,minlength="14" maxlength="14" required>
             </div>
           </label>
         </div>
@@ -119,7 +170,7 @@
             E-mail
             <div class="input-field">
               <i class="fa-solid fa-envelope"></i>
-              <input type="email" id="email" name="email">
+              <input type="email" id="email" name="email" required>
             </div>
           </label>
         </div>
@@ -129,47 +180,57 @@
             Confirmar e-mail
             <div class="input-field">
               <i class="fa-solid fa-envelope"></i>
-              <input type="email" id="email" name="email">
+              <input type="email" id="email" name="email" required>
             </div>
           </label>
         </div>
 
         <div class="input-box">
-          <label for="email">
+          <label for="rua">
             Rua
             <div class="input-field">
               <i class="fa-solid fa-envelope"></i>
-              <input type="email" id="email" name="email">
+              <input type="text" id="rua" name="rua" required>
             </div>
           </label>
         </div>
 
         <div class="input-box">
-          <label for="email">
+          <label for="numero">
             Número
             <div class="input-field">
               <i class="fa-solid fa-envelope"></i>
-              <input type="email" id="email" name="email">
+              <input type="number" id="numero" name="numero" required>
             </div>
           </label>
         </div>
 
         <div class="input-box">
-          <label for="email">
+          <label for="bairro">
             Bairro
             <div class="input-field">
               <i class="fa-solid fa-envelope"></i>
-              <input type="email" id="email" name="email">
+              <input type="text" id="bairro" name="bairro" required>
             </div>
           </label>
         </div>
 
         <div class="input-box">
-          <label for="email">
+          <label for="cidade">
             Cidade
             <div class="input-field">
               <i class="fa-solid fa-envelope"></i>
-              <input type="email" id="email" name="email">
+              <input type="text" id="cidade" name="cidade" required>
+            </div>
+          </label>
+        </div>
+
+        <div class="input-box">
+          <label for="cep">
+            CEP
+            <div class="input-field">
+              <i class="fa-solid fa-envelope"></i>
+              <input type="text" id="cep" name="cep" minlength="9" maxlength="9" required>
             </div>
           </label>
         </div>
@@ -177,13 +238,22 @@
 
 
         <div class="input-box">
-          <label for="passaword">
+          <label for="pwd">
             Senha
             <div class="input-field">
               <i class="fa-solid fa-key"></i>
-              <input type="passaword" id="passaword" name="passaword">
+              <input type="password" id="pwd" name="pwd" pattern="(?=(.*[0-9]))((?=.*[A-Za-z0-9])(?=.*[A-Z])(?=.*[a-z]))^.{8,}$" required>
             </div>
           </label>
+
+          <div class="input-box">
+            <label for="pwd2">
+              Confirmar senha
+              <div class="input-field">
+                <i class="fa-solid fa-key"></i>
+                <input type="password" id="pwd2" name="pwd2" required>
+              </div>
+            </label>
 
           <div id="forgt_passaword">
             <a href="#">
