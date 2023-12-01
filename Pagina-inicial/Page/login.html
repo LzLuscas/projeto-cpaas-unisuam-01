@@ -11,6 +11,7 @@
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
     rel="stylesheet">
+
   <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -19,6 +20,7 @@
   <link href="./Page/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="./Page/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="./Page/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+
   <link href="./Page/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
@@ -30,6 +32,7 @@
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="./assets/css/login.css" rel="stylesheet">
+
   <script src="./Page/assets/vendor/purecounter/purecounter.js" defer></script>
   <script src="./Page/assets/vendor/aos/aos.js" defer></script>
   <script src="./Page/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
@@ -40,239 +43,69 @@
   <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
     integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
     crossorigin="" defer></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous" defer></script>
-  <script src="./Page/assets/js/jquerystorage.js" defer></script>
 
-  <script src="./assets/js/main.js" defer></script>
-  <!-- <script src="./assets/js/validate.js" defer></script> -->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"
+    defer></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"
+    defer></script>
+
+
+  <script src="./Page/assets/js/main.js" defer></script>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
 </head>
 
+<script>
+ 
+</script>
+<style>
+  #toast,#toast2{
+  color: black;
+  height: 100%;
+  width: 100%;
+  font-size: 20px;
+}
 
+</style>
 <body>
 
-  <!--Header-->
-  <header id="header" class="header fixed-top">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-      <a href="../index.html" class="logo d-flex align-items-center">
-        <img src="./assets/img/telecall-logo-white.png" alt="logo da telecall">
-        <span></span>
-      </a>
-      <div class="drk">
-        <input type="checkbox" class="checkbox" id="chk" />
-        <label class="label" for="chk">
-          <i class="fas fa-sun"></i>
-          <i class="fas fa-moon"></i>
-          <div class="ball"></div>
-        </label>
-      </div>
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a id="header1" class="nav-link scrollto active" href="../index.html#hero">Inicio</a></li>
-          <li><a id="header1" class="nav-link scrollto" href="./saiba-mais.html">Sobre a Telecall</a></li>
-          <li><a id="header1" class="nav-link scrollto" href="/index.html#testimonials">Clientes</a></li>
-          <li><a id="header1" class="nav-link scrollto" href="./Page/cpaas.html">CPaaS</a></li>
-        
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-
-      </nav>
-    </div>
-  </header>
 
   <main id="container">
-    <form id="login_form" action="javascript:alert('Formulario aprovado com sucesso!')" method="post" id="formcard">
-      <div id="form_header">
-        <h1>Cadastro</h1>
-        <i id="mode_icon"></i>
+    <div class="section text-center">
+      <h4 class="mb-4 pb-3">Login</h4>
+      <div id="toast" class="toast">
+        <h4></h4>
       </div>
-      <div id="social_media">
-        <a href="https://www.facebook.com/TelecallBr" target="_blank">
-          <img src="./assets/img/facebook.png" alt="Facebook logo">
-        </a>
-        <a href="https://www.linkedin.com/company/telecall/" target="_blank">
-          <img src="./assets/img/linkedin.png" alt="Google logo">
-        </a>
-        <a href="https://github.com/LzLuscas/projeto-facul-01" target="_blank">
-          <img src="./assets/img/github.png" alt="Github logo">
-        </a>
-      </div>
-      <div id="inputs">
-        <div class="input-box">
-          <label for="uid">
-            Nome completo
-            <div class="input-field">
-              <i class="fa-solid fa-user"></i>
-              <input type="text" id="uid" name="uid" required>
-            </div>
-          </label>
+      <form action="" name="form" id="form">
+        <div class="form-groupa login">
+          <input type="text" class="form-style" placeholder="Login" id="usuario" autocomplete="off"
+            name="usuario" maxlength="6">
+          <i class="input-icon uil uil-user"></i>
         </div>
-
-        <div class="input-box">
-          <label for="gen">
-            Gênero
-            <div class="input-field">
-              <i class="fa-solid fa-user"></i>
-              <input type="text" id="gen" name="gen">
-            </div>
-          </label>
+        <div class="form-groupa mt-4 login">
+          <input type="password" class="form-style" placeholder="Senha" id="senha" autocomplete="off"
+            name="senha">
+          <i class="input-icon uil uil-lock-alt"></i>
         </div>
-
-        <div class="input-box">
-          <label for="nasc">
-            Data de nascimento
-            <div class="input-field">
-              <i class="fa-solid fa-user"></i>
-              <input type="date" id="nasc" name="nasc" required>
-            </div>
-          </label>
-        </div>
-
-        <label for="idade">
-          Idade 
-          <div class="input-field">
-           <i class="fa-solid fa-user"></i>
-           <input type="text" name="idade" id="idade" disabled>
-
-          </div>
-
-       </label>
-
-        <div class="input-box">
-          <label for="cel">
-            Celular
-            <div class="input-field">
-              <i class="fa-solid fa-user"></i>
-              <input type="text" id="cel" name="cel" minlength="14" maxlength="15" >
-            </div>
-          </label>
-        </div>
-
-        <div class="input-box">
-          <label for="cpf">
-            CPF
-            <div class="input-field">
-              <i class="fa-solid fa-user"></i>
-              <input type="text" id="cpf" name="cpf" ,minlength="14" maxlength="14" required>
-            </div>
-          </label>
-        </div>
-
-        <div class="input-box">
-          <label for="email">
-            E-mail
-            <div class="input-field">
-              <i class="fa-solid fa-envelope"></i>
-              <input type="email" id="email" name="email" required>
-            </div>
-          </label>
-        </div>
-
-        <div class="input-box">
-          <label for="email">
-            Confirmar e-mail
-            <div class="input-field">
-              <i class="fa-solid fa-envelope"></i>
-              <input type="email" id="email" name="email" required>
-            </div>
-          </label>
-        </div>
-
-        <div class="input-box">
-          <label for="rua">
-            Rua
-            <div class="input-field">
-              <i class="fa-solid fa-envelope"></i>
-              <input type="text" id="rua" name="rua" required>
-            </div>
-          </label>
-        </div>
-
-        <div class="input-box">
-          <label for="numero">
-            Número
-            <div class="input-field">
-              <i class="fa-solid fa-envelope"></i>
-              <input type="number" id="numero" name="numero" required>
-            </div>
-          </label>
-        </div>
-
-        <div class="input-box">
-          <label for="bairro">
-            Bairro
-            <div class="input-field">
-              <i class="fa-solid fa-envelope"></i>
-              <input type="text" id="bairro" name="bairro" required>
-            </div>
-          </label>
-        </div>
-
-        <div class="input-box">
-          <label for="cidade">
-            Cidade
-            <div class="input-field">
-              <i class="fa-solid fa-envelope"></i>
-              <input type="text" id="cidade" name="cidade" required>
-            </div>
-          </label>
-        </div>
-
-        <div class="input-box">
-          <label for="cep">
-            CEP
-            <div class="input-field">
-              <i class="fa-solid fa-envelope"></i>
-              <input type="text" id="cep" name="cep" minlength="9" maxlength="9" required>
-            </div>
-          </label>
-        </div>
-
-
-
-        <div class="input-box">
-          <label for="pwd">
-            Senha
-            <div class="input-field">
-              <i class="fa-solid fa-key"></i>
-              <input type="password" id="pwd" name="pwd" pattern="(?=(.*[0-9]))((?=.*[A-Za-z0-9])(?=.*[A-Z])(?=.*[a-z]))^.{8,}$" required>
-            </div>
-          </label>
-
-          <div class="input-box">
-            <label for="pwd2">
-              Confirmar senha
-              <div class="input-field">
-                <i class="fa-solid fa-key"></i>
-                <input type="password" id="pwd2" name="pwd2" required>
-              </div>
-            </label>
-
-          <div id="forgt_passaword">
-            <a href="#">
-              Esqueceu sua senha?
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <button type="submit" id="login_button">
-        Login
-
-      </button>
-
-
-    </form>
+        <a href="cadastro.html">Cadastre-se</a>
+        <input type="button" value="Login" onclick="login()" id="btnlogin" class="btn">
+      </form>
+    </div>
+  
   </main>
-
-
+  <script src="assets/js/localstorage.js"></script>
+  <script src="./Page/assets/js/jquerystorage.js"></script>
 </body>
 
 </html>
