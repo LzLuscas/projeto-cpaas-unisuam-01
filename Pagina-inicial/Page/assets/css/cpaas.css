@@ -42,7 +42,7 @@
       font-family: "Open Sans", sans-serif;
       color: #444444;
       background-color: var(--backcolor);
-      background: url(../img/hero-bg2.png);
+      background: url(../img/bluebackground.png);
       background-size: cover;
     }
     
@@ -61,7 +61,7 @@
     }
   
     p{
-      color: var(--colorblue);
+      color: var(--colorblack);
     }
   
     .back-to-top {
@@ -327,10 +327,10 @@
       font-size: 48px;
       font-weight: 700;
       line-height: 56px;
-      color: var(--colorblue3);
+      color: var(--backcolor3);
     }
     #hero h2 {
-      color:  var(--titlecolor2);
+      color:  var(--color2redheader);
       margin-bottom: 15px;
       font-size: 27px;
     }
@@ -448,7 +448,7 @@
       font-weight: bold;
       text-transform: uppercase;
       position: relative;
-      color: var(--colorblue3);
+      color: var(--backcolor3);
     }
   
   
@@ -467,7 +467,7 @@
     }
     .section-title p {
       margin: 15px 0 0 0;
-      color: var(--colorblue);
+      color: var(--backcolor3);
     }
   
       /*--------------------------------------------------------------
