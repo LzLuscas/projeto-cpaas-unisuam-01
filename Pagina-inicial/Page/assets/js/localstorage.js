@@ -74,12 +74,13 @@ function showToast(message) {
   
   if (
   idadeEmAnos >= 16 && // Não pode ter nascido no futuro
-  idadeEmAnos <= 100 // Idade máxima de 100 anos
+  idadeEmAnos <= 120 // Idade máxima de 120 anos
   ) {
   return true;
   }
   
   return false;
+
   }
   // puxando o id do formulario
   function validate() {
@@ -172,12 +173,6 @@ function showToast(message) {
     cadastrarUsuario(usuario);
   }
   }
-  
-  
-  
-  
-  
-  
   
   
   // deixei aqui pra tu so colocar no lugar no login
@@ -278,6 +273,7 @@ function showToast(message) {
   
     return true;
   }
+
   function limpa_formulário_cep() {
     //Limpa valores do formulário de cep.
     document.getElementById('rua').value = ("");
@@ -357,7 +353,7 @@ function showToast(message) {
   password.onchange = validatePassword;
   confirm_password.onkeyup = validatePassword;
   
-  // aqui ele verificar a forca da senha se ele nao colocar os caracteres que pede n funciona
+  // aqui ele verificar a força da senha se ele não colocar os caracteres que pede n funciona
   function verificaForcaSenha() 
   {
   var numeros = /([0-9])/;
